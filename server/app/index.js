@@ -1,18 +1,13 @@
 'use strict';
-var path = require('path');
-var express = require('express');
-var app = express();
+let path = require('path');
+let express = require('express');
+let app = express();
 
-module.exports = function (db) {
+module.exports = function () {
 
     // Pass our express application pipeline into the configuration
     // function located at server/app/configure/index.js
-    require('./configure')(app, db);
-
-    // Routes that will be accessed via AJAX should be prepended with
-    // /api so they are isolated from our GET /* wildcard.
-    app.use('/api', require('./routes'));
-
+    require('./configure')(app);
 
     /*
      This middleware will catch any URLs resembling a file extension
@@ -39,7 +34,7 @@ module.exports = function (db) {
     });
 
     // Error catching endware.
-    app.use(function (err, req, res, next) {
+    app.use(function (err, req, res, next) { // eslint-disable-line no-unused-vars
         console.error(err);
         console.error(err.stack);
         res.status(err.status || 500).send(err.message || 'Internal server error.');

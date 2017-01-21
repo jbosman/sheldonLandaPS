@@ -1,5 +1,5 @@
 'use strict';
-module.exports = function (app, db) {
+module.exports = function (app) {
 
     // setValue and getValue are merely alias
     // for app.set and app.get used in the less
@@ -19,7 +19,5 @@ module.exports = function (app, db) {
     if (process.env.NODE_ENV !== 'testing') {
         app.use(app.getValue('log'));
     }
-
-    require('./authentication')(app, db);
 
 };

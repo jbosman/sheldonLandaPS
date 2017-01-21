@@ -1,7 +1,7 @@
 'use strict';
 var path = require('path');
 var express = require('express');
-var favicon = require('serve-favicon');
+var favicon = require('serve-favicon'); // eslint-disable-line no-unused-vars
 
 module.exports = function (app) {
 
