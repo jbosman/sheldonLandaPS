@@ -1,5 +1,5 @@
 'use strict';
-let app = angular.module('NeedToRenameMe', ['ui.router', 'ui.bootstrap']); // eslint-disable-line no-undef
+let app = angular.module('sheldonLandaPersonalSite', ['ui.router', 'ui.bootstrap']); // eslint-disable-line no-undef
 
 app.config(function ($urlRouterProvider, $locationProvider) {
     // This turns off hashbang urls (/#about) and changes it to something normal (/about)
