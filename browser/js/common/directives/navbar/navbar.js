@@ -9,6 +9,12 @@ app.directive('navbar', function () {
             scope.items = [
                 { label: 'Home', state: 'home' },
                 { label: 'About', state: 'about' },
+                { label: 'Class Info', state: 'classInfo' },
+                { label: 'Rates', state: 'rates' },
+                { label: 'Cancellation Policy', state: 'cancellationPolicy' },
+                { label: 'Location', state: 'location' },
+                { label: 'Light Painting', state: 'lightPainting' },
+                { label: 'Music', state: 'music' },
             ];
 
         }

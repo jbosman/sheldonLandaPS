@@ -36,27 +36,48 @@ navbar {
       background: none;
     }
   }
-
-  .login-button {
-    float: right;
-    border: 1px solid black;
-    margin-top: 10px;
-    background: none;
-    outline: none !important;
-  }
-
-  .welcome {
-    float: right;
-    margin-top: 12px;
-    span {
-      color: black;
-      font-size: 16px;
-      margin-right: 5px;
-    }
-    a {
-      color: #f30046;
-      cursor: pointer;
-    }
-  }
-
 }
+
+#contactDesktop {
+  float: right;
+  padding-top: 1%;
+  padding-right: 3%;
+}
+
+// Removes bootstrap caret on dropdown menu
+.dropdown-toggle::after{
+  display: none;
+}
+
+.fa-bars {
+  color: black;
+}
+
+#mobileNav {
+  a { 
+    font-size: 4.5rem;
+    &.active {
+      color: darken(#f31214, 10%);
+    }
+  }
+}
+
+#contactMobile {
+  text-align: right;
+  a {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .desktopNav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1199px) {
+  #mobileNav {
+    display: none;
+  }
+}
+
