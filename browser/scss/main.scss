@@ -22,6 +22,7 @@ body {
 
 #main {
   padding-top: 30px;
+  padding-bottom: 30px;
   margin: 0 auto;
 }
 
@@ -30,6 +31,8 @@ body {
 @import 'about/main';
 @import 'classInfo/main';
 @import 'rates/main';
+@import 'cancel/main';
+@import 'location/main';
 
 // Font awesome Icon Size hot fix
 
