@@ -12,6 +12,14 @@ body {
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  body {
+    p {
+      font-size: 400%;
+    }
+  }
+}
+
 @mixin clearfix {
   &:after {
     content: "";
