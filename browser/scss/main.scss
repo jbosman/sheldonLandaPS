@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400';
+
 * {
   margin: 0;
   padding: 0;
@@ -6,19 +8,24 @@
 
 body {
   background: #fdfdfd;
+  font-family: "Lato", Open Sans;
   section {
   		margin-top: 2%;
   }
   p {
+    font-family: "Lato";
   	font-size: 25px;
     line-height: 120%;
   }
   h1 {
     font-size: 30px;
+    font-weight: bold;
+    color: #3498db;
   }
 
   h2 {
     font-size: 25px;
+    font-weight: bold;
   }
 }
 
