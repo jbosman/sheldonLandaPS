@@ -1,31 +1,31 @@
-<span id='contactDesktop' class='desktopNav'>
-    <h5>(212)-979-8523 | <a href='mailTo:taoslider@gmail.com'>taoslider@gmail.com</a></h5>
-</span>
-<nav class="navbar navbar-toggleable-md navbar-static-top">
+<nav class="navbar navbar-toggleable-md">
     <div class="container">
-        <div class='desktopNav'>
-            <ul class="nav navbar-nav mr-auto">
-                <li id='navItem' ng-repeat="item in items">
-                    <a ui-sref-active="active" ui-sref="{{ item.state }}">{{ item.label }}</a>
-                </li>
-            </ul>
-        </div>
 
-        <div id='mobileNav' class='row justify-content-between align-items-center'>
-            <div class='col-1'>
-                <div class="dropdown">
+        <div class='row align-items-center justify-content-between'>
+            <div class='col-lg-8 col-md-2'>
+
+                <div class='desktopNav'>
+                    <ul class="nav navbar-nav mr-auto">
+                        <li id='navItem' ng-repeat="item in items">
+                            <a ui-sref-active="active" ui-sref="{{ item.state }}">{{ item.label }}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id='mobileNav' class="dropdown">
                     <button id='mobileNavBtn' class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     <i class="fa fa-bars fa-6x" aria-hidden="true"></i>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li ng-repeat="item in items">
-                        <a ui-sref-active='active' ui-sref='{{ item.state }}'>{{ item.label }}</a>
-                    </li>
+                        <li ng-repeat="item in items">
+                            <a ui-sref-active='active' ui-sref='{{ item.state }}'>{{ item.label }}</a>
+                        </li>
                     </ul>
                 </div>
+                   
             </div>
-            <div id='contactMobile' class='col-10'>
-                <h3>(212)979-8523 | <a href='mailTo:taoslider@gmail.com'>taoslider@gmail.com</a></h3>
+            <div class='col-lg-4 col-md-10' id='contactDesktop' class='desktopNav'>
+                <h5>(212)-979-8523 | <a href='mailTo:taoslider@gmail.com'>taoslider@gmail.com</a></h5>
             </div>
         </div>
     </div>

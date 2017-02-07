@@ -1,4 +1,15 @@
+header {
+	position: relative;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("images/SheldonWallLeanNew.jpg"); 
+	background-size: cover;
+	background-position: relative center;
+	height: 100vh;
+	
+	background-attachment: fixed;
+}
+
 #about {
+
 	#headShotImg {
 		margin-left: 5%;
 		float: right;	
@@ -27,5 +38,11 @@
 		}
 	}
 
+}
+
+@media only screen and (max-width: 1023px) {
+	header {
+		height: 50vh;
+	}
 }
 
