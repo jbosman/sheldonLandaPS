@@ -1,10 +1,17 @@
 #cancel {
+
+	padding: 60px 0;
+
+	background-color: $altSectBackground;
+
 	h1 {
 		text-align: center;
 		padding: 10px 20px;
 		color: white;
-		background-color: #D9534F;
-		border-radius: 10px;
+		background-color: $siteRedColor;
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+		border-bottom: 2px solid #FFF;
 	}
 
 	p {
@@ -14,6 +21,7 @@
 	.cancelDiv {
 		border: 2px solid;
 		border-radius: 10px;
+		background-color: #FFF;
 	}
 }
 
