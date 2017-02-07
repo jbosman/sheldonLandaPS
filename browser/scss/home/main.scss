@@ -1,7 +1,13 @@
+#homeHeader {
+	// background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.25)), url("images/steinway&sonsLogo.jpg");
+	background-image: url("images/steinway&sonsLogo.jpg");
+}
+
 #home {
 	iframe {
 		display: block;
 		margin: auto;
+		margin-bottom: 20px;
 	}
 }
 

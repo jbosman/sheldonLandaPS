@@ -1,17 +1,8 @@
 #rates {
-	text-align: center;
-	#ratesHeading {
-		margin-bottom: 2%;
-	}
-	h1{
-		font-size: 50px;
-	}
-	section:nth-child(2) {
-		margin-top: 7%;
-	}
-	.rate {
-		font-weight: normal;
-		color: black;
-	}
 
+	text-align: center;
+
+	#ratesHeading { margin-bottom: 20px; }
 }
+
+@import 'rate-box'
