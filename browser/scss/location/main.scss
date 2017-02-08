@@ -2,7 +2,9 @@
 	iframe {
 		display: block;
 		margin: auto;
+		padding: 10px;
 		border-radius: 10px;
+		frameborder: 2px;
 	}
 
 	p {
@@ -20,5 +22,6 @@
 		display: block;
 		margin: auto;
 		border-radius: 10px;
+		margin-bottom: 20px;
 	}
 }

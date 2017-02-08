@@ -3,6 +3,12 @@
 	text-align: center;
 
 	#ratesHeading { margin-bottom: 20px; }
+
+	.ratesRow { margin-bottom: 40px; }
+
+	h2 {
+		color: $themeColor;
+	}
 }
 
 @import 'rate-box'

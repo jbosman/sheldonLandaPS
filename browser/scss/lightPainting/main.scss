@@ -1,17 +1,56 @@
 #lightPainting {
+
+	background-color: $altSectBackground;
+
 	.heading {
 		text-align: center;
-		background-color: white;
+		// background-color: white;
 		font-size: 30px;
     	font-weight: bold;
-    	color: #3498db;
+    	color: $themeColor;
 	}
-	h1 {
+
+	h1, h3 {
 		text-align: center;
 		padding: 10px 20px;
-		color: white;
-		background-color: #343AFE;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.fineArt{
+		padding: 10px;
+	}
+
+	.fineArt:hover {
+		background-color: $themeColor;
 		border-radius: 10px;
+
+		h3 {
+			color: #FFF;
+		}
+	}
+
+	.fineArtLink {
+
+		h1{
+			color: #FFF;
+			background-color: $themeColor;
+			border-radius: 10px;
+		}
+	}
+
+	.fineArtLink:hover {
+
+		h1 { 
+			color: darken( $themeColor, 10%); 
+			background-color: darken( $themeColor, 30%)
+		}
+	}
+
+	h3 {
+		color: $themeColor;
 	}
 
 	img {
