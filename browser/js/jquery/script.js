@@ -43,7 +43,6 @@ $('document').ready(function() {
 			handler: function(direction) { // eslint-disable-line no-undef
 			if( direction === 'down'){
 				$('.navAtag').css('color', '#000')
-				// console.log($('#atag' + atagName + 'Desk'))
 				$('#atag' + atagName + 'Desk').css('color', '#FF0000')
 				$('#atag' + atagName + 'Mobile').css('color', '#FF0000')
 			}
