@@ -1,20 +1,17 @@
-#aboutHeader {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("images/SheldonWallLeanNew.jpg");
-}
-
 #about {
 
 	#headShotImg {
 		margin-left: 5%;
 		float: right;	
 	}
+	
 	#kungFuImg {
 		margin-right: 5%;
 		float: left;	
 	}
-	p {
-		text-align: justify;
-	}
+
+	p { text-align: justify; }
+
 	h1 {
 		text-align: center;
 		margin-bottom: 10px;
@@ -24,12 +21,8 @@
 @media only screen and (max-width: 1200px) {
 
 	#about {
-		#headShotImg {
-			width: 45%;	
-		}
-		#kungFuImg {
-			width: 45%;	
-		}
+		#headShotImg { width: 45%; }
+		#kungFuImg { width: 45%; }
 	}
 
 }

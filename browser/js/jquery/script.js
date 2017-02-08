@@ -1,14 +1,16 @@
-$('document').ready(function() { // eslint-disable-line no-undef
-	
-	console.log('hello')
+$('document').ready(function() { 
 
-	let rateBox = $('rate-box');	// eslint-disable-line no-undef
+	let navbar = $('navbar');	
+	let headerImage = $('#homeHeader') 
 
-	rateBox.hover(function(){
-		console.log('haha')
-		rateBox.addClass('boxShadow');
-	})
+	let navBarHeight = navbar[0].scrollHeight;
 
+	headerImage.css('background-position-y', navBarHeight);
 
+	// Make sure it updates on resizes
+	$(window).on( 'resize', () => {	
+		let newHeight = navbar[0].scrollHeight;
+		headerImage.css('background-position-y', newHeight);
+	});
 
 });

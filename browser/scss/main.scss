@@ -24,15 +24,15 @@ body {
   header {
     position: relative;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: relative center;
     height: 100vh;
     background-attachment: fixed;
   }
 
+  // Resizes for mobile devices so you can see whole image
   @media only screen and (max-width: 1023px) {
-    header {
-      height: 50vh;
-    }
+    header { height: 60vh; }
   }
 
   section {
@@ -65,9 +65,7 @@ body {
     font-weight: bold;
   }
 
-  h3 {
-    font-size: 80%;
-  }
+  h3 { font-size: 80%; }
   
 }
 

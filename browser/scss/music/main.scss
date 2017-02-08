@@ -3,9 +3,8 @@
 		display: block;
 		margin: auto;
 	}
-	h1, h2, h3 {
-		text-align: center;
-	}
+	h1, h2, h3 { text-align: center; }
+	
 	.cd, .cd-med {
 		margin: 10px 10px;
 		padding: 10px 10px;
@@ -13,17 +12,17 @@
 		border: 1px solid #000;
 		box-shadow: 10px 10px 5px #ddd;
 	}
-	.row {
-		margin-top: 3%;
-	}
+
+	.cd { overflow-x: hidden }
+
+	.row { margin-top: 3%; }
+
 	a:hover {
 		text-decoration: none;
 		color: #FFF;
 	}
 	.cd-med:hover {
 		background-color:  #3498db;
-		h1{
-			color: #FFF;
-		}
+		h1{ color: #FFF;}
 	}
 }

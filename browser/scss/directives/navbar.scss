@@ -5,18 +5,14 @@ navbar {
     padding: 0;
   }
 
-  .row {
-    width: 100%;
-  }
+  .row { width: 100%; }
 
   display: block;
   background: white;
   border-bottom: 1px solid black;
   box-shadow: 1px 1px 14px -3px black;
 
-  .container {
-    width: 95%;
-  }
+  .container { width: 95%; }
 
   a {
     text-align: center;
@@ -27,16 +23,12 @@ navbar {
   .nav > li > a {
     cursor: pointer;
     transition: color 0.2s;
-    &.active {
-      color: darken(#f31214, 10%);
-    }
+    &.active { color: darken(#f31214, 10%); }
     &:hover {
       background: none;
       color: #f31214;
     }
-    &:focus {
-      background: none;
-    }
+    &:focus { background: none; }
   }
 
   #contactDesktop {
@@ -50,25 +42,17 @@ navbar {
 
     a {
       font-size: 100%;
-      &.visited {
-        color: #FFF;
-      }
+      &.visited { color: #FFF; }
     }
-    
   }
-
 
 }
 
 
 // Removes bootstrap caret on dropdown menu
-.dropdown-toggle::after{
-  display: none;
-}
+.dropdown-toggle::after{ display: none; }
 
-.fa-bars {
-  color: black;
-}
+.fa-bars { color: black; }
 
 #mobileNav {
 
@@ -86,20 +70,14 @@ navbar {
 
 #contactMobile {
   text-align: right;
-  a {
-    font-size: 40px;
-  }
+  a { font-size: 40px; }
 }
 
 @media only screen and (max-width: 1200px) {
-  .desktopNav {
-    display: none;
-  }
+  .desktopNav { display: none; }
 }
 
 @media only screen and (min-width: 1199px) {
-  #mobileNav {
-    display: none;
-  }
+  #mobileNav, #navbarPush { display: none; }
 }
 
