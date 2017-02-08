@@ -42,9 +42,12 @@ navbar {
 
     a {
       font-size: 100%;
-      &.visited { color: #FFF; }
+      &.visited { color: darken(#f31214, 10%) }
+      // &.visited { color: #FFF; }
     }
   }
+
+  .navSelected { color: darken(#f31214, 10%) }
 
 }
 
