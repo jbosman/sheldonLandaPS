@@ -30,35 +30,38 @@ $('document').ready(function() {
 		});
 	});
 
+	/* Way Points */
+
 	let sections = $('.navAtag');
+	let wayPointsHolder = [];
 
 	sections = Array.prototype.slice.call(sections)
 
-	let wayPoints = sections.forEach( (atag) => { //eslint-disable-line
+	sections.forEach( (atag) => {
 		
 		let atagName = atag.hash.slice(1);
 
-		new Waypoint({ // eslint-disable-line
-			element: document.getElementById(atagName),
-			handler: function(direction) { // eslint-disable-line no-undef
+		wayPointsHolder.push( new Waypoint({ 
+			element: $(atag.hash),
+			handler: function(direction) { 
 			if( direction === 'down'){
 				$('.navAtag').css('color', '#000')
 				$('#atag' + atagName + 'Desk').css('color', '#FF0000')
 				$('#atag' + atagName + 'Mobile').css('color', '#FF0000')
 			}
 			}, offset: 100 
-		})
+		}));
 
-		new Waypoint({ // eslint-disable-line
-			element: document.getElementById(atagName),
-			handler: function(direction) { // eslint-disable-line no-undef
+		wayPointsHolder.push( new Waypoint({ 
+			element: $(atag.hash),
+			handler: function(direction) { 
 			if( direction === 'up'){
 				$('.navAtag').css('color', '#000')
 				$('#atag' + atagName + 'Desk').css('color', '#FF0000')
 				$('#atag' + atagName + 'Mobile').css('color', '#FF0000')
 			}
 			}, offset: -100 
-		})
+		}) );
 	})
 
 });

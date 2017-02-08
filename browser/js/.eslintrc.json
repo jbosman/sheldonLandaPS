@@ -5,6 +5,7 @@
   "globals": {
     "app": true,
     "_": true,
-    "$": true
+    "$": true,
+    "Waypoint": true
   }
 }

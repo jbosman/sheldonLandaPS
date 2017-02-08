@@ -6,17 +6,6 @@ app.directive('navbar', function () {
         templateUrl: 'js/common/directives/navbar/navbar.html',
         link: function (scope) {
 
-            // let sections = [ 
-            //     'Home', 
-            //     'About', 
-            //     'Class Info', 
-            //     'Rates', 
-            //     'Cancel Policy', 
-            //     'Location', 
-            //     'Light Painting',
-            //     'Music'
-            //     ];
-
             scope.items = [
                 { label: 'Home', href: '#home', deskId: 'ataghomeDesk', mobileId:  'ataghomeMobile' },
                 { label: 'About', href: '#about', deskId: 'atagaboutDesk', mobileId:  'atagaboutMobile'},
