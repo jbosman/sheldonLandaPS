@@ -3,13 +3,13 @@ $('document').ready(function() {
 	let navbar = $('navbar');	
 	let headerImage = $('#homeHeader') 
 
-	let navBarHeight = { height: navbar[0].scrollHeight };
+	let navBarHeight = { height: navbar[0].clientHeight };
 
 	headerImage.css('background-position-y', navBarHeight);
 
 	// Make sure it updates on resizes
 	$(window).on( 'resize', () => {	
-		navBarHeight.height = navbar[0].scrollHeight;
+		navBarHeight.height = navbar[0].clientHeight;
 		headerImage.css('background-position-y', navBarHeight.height);
 	});
 
@@ -22,7 +22,7 @@ $(function() {
 			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 			if (target.length) {
 				$('html, body').animate({
-					scrollTop: target.offset().top - navBarHeight.height
+					scrollTop: target.offset().top - $('navbar')[0].clientHeight
 				}, 1500);
 					return false;
 				}
