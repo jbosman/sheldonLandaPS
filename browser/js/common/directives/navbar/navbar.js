@@ -7,14 +7,14 @@ app.directive('navbar', function () {
         link: function (scope) {
 
             scope.items = [
-                { label: 'Home', state: 'home' },
-                { label: 'About', state: 'about' },
-                { label: 'Class Info', state: 'classInfo' },
-                { label: 'Rates', state: 'rates' },
-                { label: 'Cancellation Policy', state: 'cancel' },
-                { label: 'Location', state: 'location' },
-                { label: 'Light Painting', state: 'lightPainting' },
-                { label: 'Music', state: 'music' },
+                { label: 'Home', href: '#home' },
+                { label: 'About', href: '#about' },
+                { label: 'Class Info', href: '#classInfo' },
+                { label: 'Rates', href: '#rates' },
+                { label: 'Cancel Policy', href: '#cancel' },
+                { label: 'Location', href: '#location' },
+                { label: 'Light Painting', href: '#lightPainting' },
+                { label: 'Music', href: '#music' },
             ];
 
         }

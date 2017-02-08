@@ -7,7 +7,7 @@
                 <div class='desktopNav'>
                     <ul class="nav navbar-nav mr-auto">
                         <li id='navItem' ng-repeat="item in items">
-                            <a ui-sref-active="active" ui-sref="{{ item.state }}">{{ item.label }}</a>
+                            <a href="{{ item.href }}">{{ item.label }}</a>
                         </li>
                     </ul>
                 </div>
@@ -18,7 +18,7 @@
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                         <li ng-repeat="item in items">
-                            <a ui-sref-active='active' ui-sref='{{ item.state }}'>{{ item.label }}</a>
+                            <a href= "{{ item.href }}">{{ item.label }}</a>
                         </li>
                     </ul>
                 </div>
