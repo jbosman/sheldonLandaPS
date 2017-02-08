@@ -6,9 +6,9 @@
 
 	.ratesRow { margin-bottom: 40px; }
 
-	h2 {
-		color: $themeColor;
-	}
+	h2 { color: $themeColor; }
+
+	rate-box { padding: 0; }
 }
 
 @import 'rate-box'

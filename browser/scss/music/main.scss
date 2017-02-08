@@ -6,7 +6,7 @@
 	h1, h2, h3 {
 		text-align: center;
 	}
-	.cd {
+	.cd, .cd-med {
 		margin: 10px 10px;
 		padding: 10px 10px;
 		border-radius: 10px;
@@ -20,7 +20,7 @@
 		text-decoration: none;
 		color: #FFF;
 	}
-	.cd:hover {
+	.cd-med:hover {
 		background-color:  #3498db;
 		h1{
 			color: #FFF;

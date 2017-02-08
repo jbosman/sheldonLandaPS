@@ -7,7 +7,7 @@
 
 // });
 
-app.directives('music', function(){
+app.directive('music', function(){
 
 	return {
 		restrict: 'E',
