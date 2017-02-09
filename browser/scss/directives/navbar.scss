@@ -23,10 +23,10 @@ navbar {
   .nav > li > a {
     cursor: pointer;
     transition: color 0.2s;
-    &.active { color: darken(#f31214, 10%); }
+    &.active { color: darken($themeColor, 10%); }
     &:hover {
       background: none;
-      color: #f31214;
+      color: $themeColor;
     }
     &:focus { background: none; }
   }
@@ -42,7 +42,7 @@ navbar {
 
     a {
       font-size: 100%;
-      &.visited { color: darken(#f31214, 10%) }
+      &.visited { color: darken($themeColor, 10%) }
       // &.visited { color: #FFF; }
     }
   }
@@ -64,7 +64,7 @@ navbar {
     text-align: left;
     font-size: 60px;
     &.active {
-      color: darken(#f31214, 10%);
+      color: darken($themeColor, 10%);
     }
   }
 }

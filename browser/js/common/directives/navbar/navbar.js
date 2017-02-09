@@ -11,7 +11,7 @@ app.directive('navbar', function () {
                 { label: 'About', href: '#about', deskId: 'atagaboutDesk', mobileId:  'atagaboutMobile'},
                 { label: 'Class Info', href: '#classInfo', deskId: 'atagclassInfoDesk', mobileId:  'atagclassInfoMobile' },
                 { label: 'Rates', href: '#rates', deskId: 'atagratesDesk', mobileId:  'atagratesMobile' },
-                { label: 'Cancel Policy', href: '#cancel', deskId: 'atagcancelDesk', mobileId:  'atagcancelMobile' },
+                { label: 'Cancellations', href: '#cancel', deskId: 'atagcancelDesk', mobileId:  'atagcancelMobile' },
                 { label: 'Location', href: '#location', deskId: 'ataglocationDesk', mobileId:  'ataglocationMobile' },
                 { label: 'Light Painting', href: '#lightPainting', deskId: 'ataglightPaintingDesk', mobileId:  'ataglightPaintingMobile' },
                 { label: 'Music', href: '#music', deskId: 'atagmusicDesk', mobileId:  'atagmusicMobile' },

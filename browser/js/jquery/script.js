@@ -1,16 +1,19 @@
 $('document').ready(function() { 
 
 	let navbar = $('navbar');	
-	let headerImage = $('#homeHeader') 
+	let homeImage = $('#homeHeader');
+	let classInfoImage = $('#classInfoHeader');
 
 	let navBarHeight = { height: navbar[0].clientHeight };
 
-	headerImage.css('background-position-y', navBarHeight);
+	homeImage.css('background-position-y', navBarHeight.height);
+	classInfoImage.css('background-position-y', navBarHeight.height);
 
 	// Make sure it updates on resizes
 	$(window).on( 'resize', () => {	
 		navBarHeight.height = navbar[0].clientHeight;
-		headerImage.css('background-position-y', navBarHeight.height);
+		homeImage.css('background-position-y', navBarHeight.height);
+		classInfoImage.css('background-position-y', navBarHeight.height);
 	});
 
 	/* Nav scroll */
@@ -46,8 +49,8 @@ $('document').ready(function() {
 			handler: function(direction) { 
 			if( direction === 'down'){
 				$('.navAtag').css('color', '#000')
-				$('#atag' + atagName + 'Desk').css('color', '#FF0000')
-				$('#atag' + atagName + 'Mobile').css('color', '#FF0000')
+				$('#atag' + atagName + 'Desk').css('color', '#3498db')
+				$('#atag' + atagName + 'Mobile').css('color', '#3498db')
 			}
 			}, offset: 100 
 		}));
@@ -57,8 +60,8 @@ $('document').ready(function() {
 			handler: function(direction) { 
 			if( direction === 'up'){
 				$('.navAtag').css('color', '#000')
-				$('#atag' + atagName + 'Desk').css('color', '#FF0000')
-				$('#atag' + atagName + 'Mobile').css('color', '#FF0000')
+				$('#atag' + atagName + 'Desk').css('color', '#3498db')
+				$('#atag' + atagName + 'Mobile').css('color', '#3498db')
 			}
 			}, offset: -100 
 		}) );

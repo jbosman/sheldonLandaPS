@@ -33,6 +33,7 @@ body {
   // Resizes for mobile devices so you can see whole image
   @media only screen and (max-width: 1023px) {
     header { height: 60vh; }
+    #classInfoHeader { background-image: url("images/sheldonReflectMobile.jpg"); }
   }
 
   section {
