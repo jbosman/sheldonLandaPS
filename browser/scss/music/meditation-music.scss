@@ -1,15 +1,3 @@
-#meditationMusicHeader {
-	background-image:  url("images/sheldonReflect.jpg");
-	height: 75vh;
-}
-
-@media only screen and (max-width: 480px){
-	#meditationMusicHeader{ 
-		height: 50vh;
-	}
-}
-
-
 meditation-music {
 	img {
 		display: block;
