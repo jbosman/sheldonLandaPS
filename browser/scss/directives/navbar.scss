@@ -40,9 +40,9 @@ navbar {
     float: left;
     text-align: left;
 
-    a { 
+    .navAtag { 
       text-align: left;
-      font-size: 240%;
+      font-size: 110%;
       &.active {
         color: darken($themeColor, 10%);
       }
@@ -58,19 +58,18 @@ navbar {
       padding: 15px 0;
     }
 
-    a {
-      font-size: 100%;
-      &.visited { color: darken($themeColor, 10%) }
-    }
+    a { &.visited { color: darken($themeColor, 10%) } }
   }
 
   #contactMobile {
     text-align: right;
     h5 { margin: 0; }
-    a { font-size: 160%; }
+    a { font-size: 200%; }
   }
 
   #navbarPush { display: none; }
+
+  #mobileNavBtn { padding: 0; }
 
   @media only screen and (max-width: 1200px){
 

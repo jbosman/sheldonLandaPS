@@ -9,6 +9,10 @@
 	h2 { color: $themeColor; }
 
 	rate-box { padding: 0; }
+
+	rate-box:last-of-type {
+		margin-right: 20px;
+	}
 }
 
 @import 'rate-box'
