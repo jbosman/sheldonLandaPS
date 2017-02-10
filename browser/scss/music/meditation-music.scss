@@ -1,0 +1,25 @@
+meditation-music {
+	img {
+		display: block;
+		margin: auto;
+	}
+	h1, h2, h3 { text-align: center; }
+
+	.cd {
+		margin: 10px 10px;
+		padding: 10px 10px;
+		border-radius: 10px;
+		border: 1px solid #000;
+		box-shadow: 10px 10px 5px #ddd;
+	}
+
+	a:hover {
+		text-decoration: none;
+		color: #FFF;
+	}
+	.cd:hover {
+		background-color:  #3498db;
+		h1{ color: #FFF;}
+	}
+
+}
