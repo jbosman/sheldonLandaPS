@@ -1,5 +1,12 @@
 #musicHeader {
 	background-image: url('images/background-light-painting.jpg');
+	height: 75vh;
+}
+
+@media only screen and (max-width: 480px){
+	#musicHeader{ 
+		height: 50vh;
+	}
 }
 
 #music {
