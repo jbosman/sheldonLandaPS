@@ -1,6 +1,5 @@
-#classInfoHeader {
-	background-image:  url("images/sheldonReflect.jpg");
-	width: 100vw;
+.classInfoHeader {
+	background-image: url('images/pianoFull.JPG');
 }
 
 #classInfo {
@@ -13,5 +12,10 @@
 
 	h1, h2 {
 		text-align: center;
+	}
+
+	img {
+		display: block;
+		margin: auto;
 	}
 }
