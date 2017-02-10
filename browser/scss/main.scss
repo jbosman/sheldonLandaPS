@@ -30,15 +30,7 @@ body {
     background-attachment: fixed;
   }
 
-  // Resizes for mobile devices so you can see whole image
-  @media only screen and (max-width: 1023px) {
-    header { height: 60vh; }
-    #classInfoHeader { background-image: url("images/sheldonReflectMobile.jpg"); }
-  }
-
-  section {
-      padding: 60px 0;
-  }
+  section { padding: 60px 0; }
 
   .section-heading:after{
       display:block;
@@ -67,6 +59,29 @@ body {
   }
 
   h3 { font-size: 80%; }
+
+
+  .iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    // padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+    }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  iframe {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    frameborder: 2px;
+  }
   
 }
 
@@ -93,11 +108,3 @@ body {
 @import 'location/main';
 @import 'lightPainting/main';
 @import 'music/main';
-
-// Font awesome Icon Size hot fix
-
-.fa-2x { font-size: 2em !important; }
-.fa-3x { font-size: 3em !important; }
-.fa-4x { font-size: 4em !important; }
-.fa-5x { font-size: 5em !important; }
-.fa-6x { font-size: 6em !important; }
