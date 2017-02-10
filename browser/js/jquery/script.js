@@ -16,6 +16,7 @@ $('document').ready(function() {
 		classInfoImage.css('background-position-y', navBarHeight.height);
 	});
 
+
 	/* Nav scroll */
     
 	$(function() {
@@ -33,6 +34,8 @@ $('document').ready(function() {
 		});
 	});
 
+
+
 	/* Way Points */
 
 	let sections = $('.navAtag');
@@ -43,7 +46,7 @@ $('document').ready(function() {
 	sections.forEach( (atag) => {
 		
 		let atagName = atag.hash.slice(1);
-
+		console.log('atag: ', atag.hash)
 		wayPointsHolder.push( new Waypoint({ 
 			element: $(atag.hash),
 			handler: function(direction) { 

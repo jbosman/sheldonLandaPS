@@ -13,7 +13,7 @@ app.directive('navbar', function () {
                 { label: 'Rates', href: '#rates', deskId: 'atagratesDesk', mobileId:  'atagratesMobile' },
                 { label: 'Cancellations', href: '#cancel', deskId: 'atagcancelDesk', mobileId:  'atagcancelMobile' },
                 { label: 'Location', href: '#location', deskId: 'ataglocationDesk', mobileId:  'ataglocationMobile' },
-                { label: 'Reviews', href: '#reviews', deskId: 'atagreviewsDesk', mobileId:  'atagreviewsMobile' },
+                // { label: 'Reviews', href: '#reviews', deskId: 'atagreviewsDesk', mobileId:  'atagreviewsMobile' },
                 { label: 'Music', href: '#music', deskId: 'atagmusicDesk', mobileId:  'atagmusicMobile' },
             ];
 
