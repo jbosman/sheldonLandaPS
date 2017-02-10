@@ -1,11 +1,20 @@
 navbar {
 
+  a {
+    text-align: center;
+    color: black;
+    font-size: 60%;
+  } 
+
   .navbar{
     margin: 0;
     padding: 0;
   }
 
-  .row { width: 100%; }
+  .row { 
+    margin: 0;
+    width: 100%; 
+  }
 
   display: block;
   background: white;
@@ -14,21 +23,30 @@ navbar {
 
   .container { width: 95%; }
 
-  a {
-    text-align: center;
-    color: black;
-    font-size: 60%;
+  // Removes bootstrap caret on dropdown menu
+  .dropdown-toggle::after{ display: none; }
+
+  .fa-bars { 
+    font-size: 600%;
+    color: black; 
   }
 
-  .nav > li > a {
-    cursor: pointer;
-    transition: color 0.2s;
-    &.active { color: darken($themeColor, 10%); }
-    &:hover {
-      background: none;
-      color: $themeColor;
+  .desktopNav { display: block; }
+
+  .mobileNav {
+
+    display: none;
+
+    float: left;
+    text-align: left;
+
+    a { 
+      text-align: left;
+      font-size: 240%;
+      &.active {
+        color: darken($themeColor, 10%);
+      }
     }
-    &:focus { background: none; }
   }
 
   #contactDesktop {
@@ -43,42 +61,47 @@ navbar {
     a {
       font-size: 100%;
       &.visited { color: darken($themeColor, 10%) }
-      // &.visited { color: #FFF; }
     }
   }
 
-}
+  #contactMobile {
+    text-align: right;
+    h5 { margin: 0; }
+    a { font-size: 160%; }
+  }
 
+  #navbarPush { display: none; }
 
-// Removes bootstrap caret on dropdown menu
-.dropdown-toggle::after{ display: none; }
+  @media only screen and (max-width: 1200px){
 
-.fa-bars { color: black; }
+  }
 
-#mobileNav {
+  @media only screen and (max-width: 1023px) {
+    .desktopNav { display: none; }
+    .mobileNav, #navbarPush { display: block; }
+    #contactMobile{ h5{ font-size: 110%; } }
+    #navbarPush { .fa-bars { font-size: 600% } }
+  }
 
-  float: left;
-  text-align: left;
+  @media only screen and (max-width: 767px){
+    .fa-bars { font-size: 300% }
+    #navbarPush { .fa-bars { font-size: 300% } }
+    #contactMobile{ h5{ font-size: 70%; } }
+  }
 
-  a { 
-    text-align: left;
-    font-size: 60px;
-    &.active {
-      color: darken($themeColor, 10%);
-    }
+  @media only screen and (max-width: 480px){
+    .fa-bars { font-size: 200% }
+    #navbarPush { .fa-bars { font-size: 200% } }
+    #contactMobile{ h5{ font-size: 70%; } }
+  }
+
+  @media only screen and (max-width: 400px){
+    .fa-bars { font-size: 200% }
+    #navbarPush { .fa-bars { font-size: 200% } }
+    #contactMobile{ h5{ font-size: 50%; } }
   }
 }
 
-#contactMobile {
-  text-align: right;
-  a { font-size: 40px; }
-}
 
-@media only screen and (max-width: 1024px) {
-  .desktopNav { display: none; }
-}
 
-@media only screen and (min-width: 1023px) {
-  #mobileNav, #navbarPush { display: none; }
-}
 

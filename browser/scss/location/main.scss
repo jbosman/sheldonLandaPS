@@ -1,11 +1,5 @@
 #location {
-	iframe {
-		display: block;
-		margin: auto;
-		padding: 10px;
-		border-radius: 10px;
-		frameborder: 2px;
-	}
+	
 
 	p {
 		margin: 3% auto 3% auto;
@@ -23,5 +17,14 @@
 		margin: auto;
 		border-radius: 10px;
 		margin-bottom: 20px;
+	}
+
+	.iframe-container {
+		padding-bottom: 60vh;
+	}
+
+	.iframe-container iframe {
+		height: 60vh;
+		width: 80%;
 	}
 }

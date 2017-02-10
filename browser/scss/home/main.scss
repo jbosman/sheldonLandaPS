@@ -4,10 +4,16 @@
 
 #home {
 	background-color: $altSectBackground;
-	iframe {
-		display: block;
-		margin: auto;
+
+	.iframe-container {
+		padding-bottom: 60vh;
 		margin-bottom: 20px;
 	}
+
+	.iframe-container iframe {
+		height: 60vh;
+		width: 90%;
+	}
+	
 }
 
