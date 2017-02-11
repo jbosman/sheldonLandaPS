@@ -2,9 +2,15 @@
 	
 
 	p {
-		margin: 3% auto 3% auto;
+		// margin: 30px auto;
 		text-align: center;
 		// width: 75%;
+	}
+
+	.locationDiv {
+		p:nth-child(5) {
+			text-align: justify;
+		}
 	}
 
 	h1 {
@@ -21,6 +27,7 @@
 
 	.iframe-container {
 		padding-bottom: 60vh;
+		margin-bottom: 20px;
 	}
 
 	.iframe-container iframe {

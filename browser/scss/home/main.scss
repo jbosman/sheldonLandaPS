@@ -7,6 +7,15 @@
 }
 
 #home {
+
+	p {
+		text-align: justify;
+	}
+
+	#moto {
+		text-align: center;
+	}
+
 	background-color: $altSectBackground;
 
 	.iframe-container {

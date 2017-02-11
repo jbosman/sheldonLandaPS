@@ -14,27 +14,21 @@
 		border-bottom: 2px solid #FFF;
 	}
 
-	p {
-		text-align: center;
-	}
-
 	.cancelDiv {
 		border: 2px solid;
 		border-radius: 10px;
 		background-color: #FFF;
 	}
 
-	#quote {
-		font-style: italic;
-	}
-}
-
-@media only screen and (max-width: 1200px) {
-	#cancel {
+	.cancelDiv {
 		p {
-			margin-top: 3%;
+			padding-left: 10%;
+			padding-right: 10%;
+			text-align: justify;
 		}
+		p:last-child { text-align: center; }
 	}
 
+	#quote { font-style: italic; }
 }
 
