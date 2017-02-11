@@ -112,7 +112,7 @@ gulp.task('buildCSS', function () {
 
 gulp.task('lintJSProduction', function () {
 
-    return gulp.src(['./browser/js/**/*.js', './server/**/*.js'])
+    return gulp.src([ '!./browser/js/jquery/*.js','./browser/js/**/*.js', './server/**/*.js'])
         .pipe(plumber({
             errorHandler: notify.onError('Linting FAILED! Check your gulp process.')
         }))

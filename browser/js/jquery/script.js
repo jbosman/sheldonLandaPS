@@ -5,7 +5,7 @@ $(window).on( 'load', function() {
 	let classInfoImage = $('#classInfoHeader');
 
 	let navBarHeight = { height: navbar[0].clientHeight };
-	debugger;
+
 	homeImage.css('background-position-y', navBarHeight.height);
 	classInfoImage.css('background-position-y', navBarHeight.height);
 
@@ -46,7 +46,7 @@ $(window).on( 'load', function() {
 	sections.forEach( (atag) => {
 		
 		let atagName = atag.hash.slice(1);
-		console.log('atag: ', atag.hash)
+		
 		wayPointsHolder.push( new Waypoint({ 
 			element: $(atag.hash),
 			handler: function(direction) { 
