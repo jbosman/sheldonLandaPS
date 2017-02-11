@@ -26,11 +26,6 @@ navbar {
   // Removes bootstrap caret on dropdown menu
   .dropdown-toggle::after{ display: none; }
 
-  .fa-bars { 
-    font-size: 600%;
-    color: black; 
-  }
-
   .desktopNav { display: block; }
 
   .mobileNav {
@@ -67,39 +62,52 @@ navbar {
     a { font-size: 200%; }
   }
 
-  #navbarPush { display: none; }
-
   #mobileNavBtn { padding: 0; }
-
-  @media only screen and (max-width: 1200px){
-
-  }
 
   @media only screen and (max-width: 1023px) {
     .desktopNav { display: none; }
-    .mobileNav, #navbarPush { display: block; }
+    .mobileNav { display: block; }
     #contactMobile{ h5{ font-size: 110%; } }
-    #navbarPush { .fa-bars { font-size: 600% } }
   }
 
   @media only screen and (max-width: 767px){
-    .fa-bars { font-size: 300% }
-    #navbarPush { .fa-bars { font-size: 300% } }
     #contactMobile{ h5{ font-size: 70%; } }
   }
 
   @media only screen and (max-width: 480px){
-    .fa-bars { font-size: 200% }
-    #navbarPush { .fa-bars { font-size: 200% } }
     #contactMobile{ h5{ font-size: 70%; } }
   }
 
   @media only screen and (max-width: 400px){
-    .fa-bars { font-size: 200% }
-    #navbarPush { .fa-bars { font-size: 200% } }
     #contactMobile{ h5{ font-size: 50%; } }
   }
 }
+
+  // Out here due to navbar push
+  // Navbar pushed is used 
+  #navbarPush { display: none; }
+  .fa-bars { 
+    font-size: 600%;
+    color: black; 
+  }
+
+  @media only screen and (max-width: 1023px) {
+    #navbarPush { display: block; }
+  }
+
+  @media only screen and (max-width: 767px){
+    .fa-bars { font-size: 300% }
+  }
+
+  @media only screen and (max-width: 480px){
+    .fa-bars { font-size: 200% }
+  }
+
+  @media only screen and (max-width: 400px){
+    .fa-bars { font-size: 200% }
+  }
+
+
 
 
 

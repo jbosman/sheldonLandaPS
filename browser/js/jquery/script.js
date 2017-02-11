@@ -1,20 +1,24 @@
 $(window).on( 'load', function() { 
 
-	let navbar = $('navbar');	
-	let homeImage = $('#homeHeader');
-	let classInfoImage = $('#classInfoHeader');
+	let navbar;
+	let backgroundsToAdjust;
+	let navBarHeight;
 
-	let navBarHeight = { height: navbar[0].clientHeight };
+	if( window.innerWidth > 480 ) {
+		navbar = $('navbar');	
+		backgroundsToAdjust = $('.jq--adjust-background');
 
-	homeImage.css('background-position-y', navBarHeight.height);
-	classInfoImage.css('background-position-y', navBarHeight.height);
+		navBarHeight = { height: navbar[0].clientHeight };
 
-	// Make sure it updates on resizes
-	$(window).on( 'resize', () => {	
-		navBarHeight.height = navbar[0].clientHeight;
-		homeImage.css('background-position-y', navBarHeight.height);
-		classInfoImage.css('background-position-y', navBarHeight.height);
-	});
+		
+		backgroundsToAdjust.css('background-position-y', navBarHeight.height);
+
+		// Make sure it updates on resizes
+		$(window).on( 'resize', () => {	
+			navBarHeight.height = navbar[0].clientHeight;
+			backgroundsToAdjust.css('background-position-y', navBarHeight.height);
+		});
+	}
 
 
 	/* Nav scroll */

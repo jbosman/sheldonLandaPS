@@ -1,17 +1,16 @@
 #classInfoHeader {
 	background-image: url("images/sheldonReflect.jpg");
-	height: 75vh;
-}
-
-@media only screen and (max-width: 480px){
-	#classInfoHeader{ 
-		height: 50vh;
-	}
+	height: 100vh;
 }
 
 #classInfoFooter {
-	background-image: url('images/pianoFull.JPG');
-	height: 75vh;
+	background-image: url('images/pianoSitDown.jpg');
+	height: 100vh;
+}
+
+@media only screen and (max-width: 480px){
+	#classInfoHeader{ height: 50vh; }
+	#classInfoFooter{ height: 50vh; }
 }
 
 #classInfo {
