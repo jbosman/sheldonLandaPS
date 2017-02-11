@@ -5,7 +5,7 @@ $('document').ready(function() {
 	let classInfoImage = $('#classInfoHeader');
 
 	let navBarHeight = { height: navbar[0].clientHeight };
-
+	debugger;
 	homeImage.css('background-position-y', navBarHeight.height);
 	classInfoImage.css('background-position-y', navBarHeight.height);
 
