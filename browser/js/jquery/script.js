@@ -1,4 +1,4 @@
-$(window).load(function() { 
+$(window).on( 'load', function() { 
 
 	let navbar = $('navbar');	
 	let homeImage = $('#homeHeader');
