@@ -10,15 +10,21 @@
 }
 
 #music {
+
+	background-color: $altSectBackground;
+
 	img {
 		display: block;
 		margin: auto;
 	}
 	h1, h2, h3 { text-align: center; }
 
+	h2 { margin-top: 10px }
+
 	.row { margin-top: 3%; }
 
 	.cd {
+		background-color: #FFF;
 		margin: 10px 10px;
 		padding: 10px 10px;
 		border-radius: 10px;
