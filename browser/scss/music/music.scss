@@ -32,9 +32,9 @@
 		overflow-x: hidden; 
 	}
 
-	.cd audio:last-child {
-		margin-bottom: 20px;
-	}
+	.cd audio { margin-bottom: 15px; }
+
+	.cd audio:last-child { margin-bottom: 20px; }
 
 	audio {
 		display: block;
