@@ -51,6 +51,9 @@ navbar {
       font-size: 80%;
       margin: 0;
       padding: 15px 0;
+      a {
+        font-size: 100%;
+      }
     }
 
     a { &.visited { color: darken($themeColor, 10%) } }
