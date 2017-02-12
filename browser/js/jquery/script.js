@@ -9,8 +9,6 @@ $(window).on( 'load', function() {
 		backgroundsToAdjust = $('.jq--adjust-background');
 
 		navBarHeight = { height: navbar[0].clientHeight };
-
-		
 		backgroundsToAdjust.css('background-position-y', navBarHeight.height);
 
 		// Make sure it updates on resizes

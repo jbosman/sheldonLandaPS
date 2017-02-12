@@ -1,10 +1,7 @@
 #homeHeader {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.25)), url("images/SheldonWallLeanNew.jpg");
+	// background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.25)), url("images/SheldonWallLeanNew.jpg");
+	background-image: url("images/SheldonWallLeanNew.jpg");
 	height: 100vh;
-}
-
-@media only screen and (max-width: 480px){
-	#homeHeader { height: 50vh; }
 }
 
 #homeFooter {
@@ -13,13 +10,9 @@
 
 #home {
 
-	p {
-		text-align: justify;
-	}
+	p { text-align: justify; }
 
-	#moto {
-		text-align: center;
-	}
+	#moto { text-align: center; }
 
 	.iframe-container {
 		padding-bottom: 60vh;
@@ -32,6 +25,7 @@
 	}
 
 	@media only screen and (max-width: 480px){
+		padding-top: 30px;
 		.iframe-container { padding-bottom: 40vh; }
 		.iframe-container iframe {
 			height: 40vh;
