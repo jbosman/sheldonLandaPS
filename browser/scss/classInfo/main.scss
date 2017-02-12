@@ -8,23 +8,9 @@
 	height: 70vh;
 }
 
-@media only screen and (max-width: 480px){
-	#classInfoHeader{ height: 50vh; }
-	#classInfoFooter{ height: 50vh; }
-}
-
 #classInfo {
 
-	p {
-		text-align: justify;
-	}
+	p { text-align: justify; }
 
-	h1, h2 {
-		text-align: center;
-	}
-
-	img {
-		display: block;
-		margin: auto;
-	}
+	h1, h2 { text-align: center; }
 }
