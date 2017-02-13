@@ -1,14 +1,13 @@
-#homeHeader {
-	// background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.25)), url("images/SheldonWallLeanNew.jpg");
-	background-image: url("images/SheldonWallLeanNew.jpg");
+#welcomeHeader {
+	background-image: url("images/SheldonWallLean.jpg");
 	height: 100vh;
 }
 
-#homeFooter {
-	background-image: url("images/pianoSitDown.jpg");
+#welcomeFooter {
+	background-image: url("images/pianoFull.jpg");
 }
 
-#home {
+#welcomeSection {
 
 	p { text-align: justify; }
 

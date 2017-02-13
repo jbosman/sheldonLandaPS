@@ -10,11 +10,13 @@
 
 #music {
 
+	p { text-align: center; }
+
 	background-color: $altSectBackground;
 
 	h1, h2, h3 { text-align: center; }
 
-	h2 { margin-top: 10px }
+	h2 { margin-top: 20px }
 
 	.row { margin-top: 3%; }
 
@@ -30,7 +32,7 @@
 
 	.cd audio { margin-bottom: 15px; }
 
-	.cd audio:last-child { margin-bottom: 20px; }
+	.cd audio:last-child { margin-bottom: 40px; }
 
 	audio {
 		display: block;
