@@ -57,24 +57,15 @@
     	background-position: center;
 	}
 
+	#Kindred-Spirit { background-image: url('images/musicBG/Kindred-Spirit-Umbral-Agent.jpg'); }
+	#Drunken-Monks { background-image: url('images/musicBG/Drunken-Monks-City-of-Gold.jpg'); }
+	#Good-Foot { background-image: url('images/musicBG/Good-Foot-Cosmic-Judge.jpg'); }
+	#Reiss { background-image: url('images/musicBG/Reiss-Unity.jpg'); }
+	#Brooklyn-Battle-Brothers { background-image: url('images/musicBG/BBB-Placidity.jpg');}
 
-	#Kindred-Spirit { 
-		background-image: 
-			// linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), 
-			url('images/musicBG/Kindred-Spirit-The-Nexus.jpg') 
-		}
-	#Drunken-Monks { 
-		background-image: 
-			// linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), 
-			url('images/musicBG/Drunken-Monks-City-of-Gold.jpg') 
-		}
-	#Good-Foot { background-image: 
-			// linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),  
-			url('images/musicBG/Good-Foot-Cosmic-Judge.jpg') }
-	#Reiss { background-image: 
-			// linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),  
-			url('images/musicBG/Reiss-Conflagrate.jpg') }
-	#Brooklyn-Battle-Brothers { background-image: 
-			// linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),  
-			url('images/musicBG/BBB-Electric-Waterfall.jpg') }
-		}
+}
+
+
+
+
+
