@@ -1,5 +1,10 @@
 navbar {
 
+  display: block;
+  background: white;
+  border-bottom: 1px solid black;
+  box-shadow: 1px 1px 14px -3px black;
+
   a {
     text-align: center;
     color: black;
@@ -15,11 +20,6 @@ navbar {
     margin: 0;
     width: 100%;
   }
-
-  display: block;
-  background: white;
-  border-bottom: 1px solid black;
-  box-shadow: 1px 1px 14px -3px black;
 
   .container { width: 95%; }
 
@@ -38,21 +38,24 @@ navbar {
     .navAtag { 
       text-align: left;
       font-size: 110%;
-      &.active {
-        color: darken($themeColor, 10%);
-      }
+      
+      &.active { color: darken($themeColor, 10%); }
     }
   }
 
   #contactDesktop {
     float: right;
     text-align: right;
+    color: $themeColor;
     h5 {
+      
       font-size: 80%;
       margin: 0;
       padding: 15px 0;
-      a {
-        font-size: 100%;
+
+      a { 
+        color: $themeColor;
+        font-size: 100%; 
       }
     }
 
@@ -61,8 +64,15 @@ navbar {
 
   #contactMobile {
     text-align: right;
-    h5 { margin: 0; }
-    a { font-size: 200%; }
+    h5 { 
+      color: $themeColor;
+      margin: 0; 
+    }
+
+    a { 
+      color: $themeColor;
+      font-size: 200%; 
+    }
   }
 
   #mobileNavBtn { padding: 0; }
