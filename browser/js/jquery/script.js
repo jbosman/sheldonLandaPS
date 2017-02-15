@@ -1,4 +1,4 @@
-window.onload = function() { 
+$(window).bind('load', function(){
 
 	let navbar;
 	let backgroundsToAdjust;
@@ -72,4 +72,4 @@ window.onload = function() {
 		}) );
 	})
 
-}
+});
