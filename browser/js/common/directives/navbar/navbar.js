@@ -5,7 +5,6 @@ app.directive('navbar', function () {
         scope: {},
         templateUrl: 'js/common/directives/navbar/navbar.html',
         link: function (scope) {
-
             scope.items = [
                 { label: 'Welcome', href: '#welcome', deskId: 'atagwelcomeDesk', mobileId:  'atagwelcomeMobile' },
                 { label: 'Class Info', href: '#classInfo', deskId: 'atagclassInfoDesk', mobileId:  'atagclassInfoMobile' },

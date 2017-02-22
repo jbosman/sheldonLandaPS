@@ -1,4 +1,4 @@
-function afterPageLoad(){
+$(window).on('load', function(){
 
 	let navbar;
 	let backgroundsToAdjust;
@@ -72,19 +72,4 @@ function afterPageLoad(){
 		}) );
 	})
 
-}
-
-if(window.attachEvent) {
-    window.attachEvent('onload', afterPageLoad);
-} else {
-    if(window.onload) {
-        var curronload = window.onload;
-        var newonload = function(evt) {
-            curronload(evt);
-            afterPageLoad(evt);
-        };
-        window.onload = newonload;
-    } else {
-        window.onload = afterPageLoad;
-    }
-}
+});
