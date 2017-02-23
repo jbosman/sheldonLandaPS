@@ -2,19 +2,9 @@
 #reviews {
 	background-color: $altSectBackground;
 
-	// #scrollRight { margin-left: auto; }
-
 	.fa-chevron-left,
-	.fa-chevron-right {
-		color: $themeColor;
-	}
+	.fa-chevron-right { color: $themeColor; }
 
-	.fa-chevron-left { margin-left: 5%; }
-
-	.fa-chevron-right { 
-		margin-right: 5%;
-		margin-left: auto;
-	}
 }
 
 @import 'review'
