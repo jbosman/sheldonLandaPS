@@ -5,6 +5,11 @@
 	.fa-chevron-left,
 	.fa-chevron-right { color: $themeColor; }
 
+	#welcomeP {
+		margin: auto;
+		text-align: center;
+	}
+
 }
 
 @import 'review'
