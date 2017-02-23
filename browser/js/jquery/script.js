@@ -18,7 +18,6 @@ $(window).on('load', function(){
 		});
 	}
 
-
 	/* Nav scroll */
     
 	$(function() {
@@ -71,5 +70,7 @@ $(window).on('load', function(){
 			}, offset: -100 
 		}) );
 	})
+
+	
 
 });
