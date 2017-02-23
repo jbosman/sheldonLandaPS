@@ -1,10 +1,10 @@
-app.directive('navbar', function () {
+app.directive('navbar', function (navbarFactory) {
 
     return {
         restrict: 'E',
         scope: {},
         templateUrl: 'js/common/directives/navbar/navbar.html',
-        link: function (scope) {
+        link: function (scope, elements) {
             scope.items = [
                 { label: 'Welcome', href: '#welcome', deskId: 'atagwelcomeDesk', mobileId:  'atagwelcomeMobile' },
                 { label: 'Class Info', href: '#classInfo', deskId: 'atagclassInfoDesk', mobileId:  'atagclassInfoMobile' },
@@ -16,8 +16,18 @@ app.directive('navbar', function () {
                 { label: 'Music', href: '#music', deskId: 'atagmusicDesk', mobileId:  'atagmusicMobile' },
             ];
 
+            // Grab the height of the navbar so we can adject background images
+            navbarFactory.navbarHeight = elements[0].clientHeight;
         }
 
     };
 
 });
+
+app.factory('navbarFactory', function(){
+    let navbarHeight = 0;
+
+    return {
+        navbarHeight: navbarHeight
+    }
+})

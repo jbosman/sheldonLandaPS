@@ -1,23 +1,5 @@
 $(window).on('load', function(){
 
-	let navbar;
-	let backgroundsToAdjust;
-	let navBarHeight;
-
-	if( window.innerWidth > 480 ) {
-		navbar = $('navbar');	
-		backgroundsToAdjust = $('.jq--adjust-background');
-
-		navBarHeight = { height: navbar[0].clientHeight };
-		backgroundsToAdjust.css('background-position-y', navBarHeight.height);
-
-		// Make sure it updates on resizes
-		$(window).on( 'resize', () => {	
-			navBarHeight.height = navbar[0].clientHeight;
-			backgroundsToAdjust.css('background-position-y', navBarHeight.height);
-		});
-	}
-
 	/* Nav scroll */
     
 	$(function() {
