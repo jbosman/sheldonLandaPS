@@ -10,6 +10,22 @@
 		text-align: center;
 	}
 
+	.carousel-indicators li,
+	.carousel-indicators .active {
+		background-color: $themeColor;
+	}
+
+	.carousel-indicators { 
+		position: relative;
+		margin: 0 auto 20px auto;
+		padding-top: 10px;
+	}
+
+	h3 {
+		color: $themeColor;
+		text-align: center;
+	}
+
 }
 
 @import 'review'

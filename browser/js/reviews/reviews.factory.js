@@ -61,7 +61,7 @@ app.factory( 'reviewFactory', function(){
 			stars: 5,
 			date: '08/12/2013',
 			paragraphs: [
-				"While other teachers open up a piano book and take lessons from it, Sheldon is all about finding out what you want to learn and using that as well, as the basics to get the most out of you and your piano playing.  I thought it was a daunting task but I finally have been able to create songs and understand theory.  Sheldon makes lessons fun and not a chore. That's important.  Highly recommended!!"
+				"Not a piano player, never played the piano seriously before (outside chopsticks), and went to Sheldon to learn a new song for a \"special project\". He worked with me very patiently to learn the song (along with some theory along the way) and while we never finished the work (personal life changes, NOT related to Sheldon), I intend to go back to finish the job at a later date."
 			] 
 		},
 		{ 
@@ -109,10 +109,10 @@ app.factory( 'reviewFactory', function(){
 			stars: 5,
 			date: '02/23/2009',
 			paragraphs: [
-				"Sheldon is a patient, wise teacher who has helped me finally learn piano at 40.",
-				"I'd always wanted to learn and am grateful to have found a teacher who understands an adult beginner: he mixes the fundamentals like scales and chords with songs I know and love, and blends skill building with discussion of the overall theory and context of music. When I get frustrated, he's excellent at helping me figure out where I'm stumbling so I can work through it.",
-				"I wasn't sure about lessons in the home of a guy I'd never met, but immediately felt it was the perfect set up. It makes lessons more welcoming and warm.",
-				"I'm coming up on two years with Sheldon and wholeheartedly endorse him if you're someone like me who always wanted to play and never did. There's no time like the present."
+				"Of the four piano teachers I've had in my life, Sheldon is by far the best. I found him on Craig's List and for a while I was paying him with homemade pies.",
+				"He is not the kind to brag about himself, but over time information leaks out -- he toured with Blues Traveler and the Spin Doctors, he played in an Allman Brothers cover band, he has a degree from music college, he's been teaching for 30 years, and he's a kung fu master. Everything he teaches has a holistic approach, on the theory that you can't produce good music if your body and mind aren't in harmony. This is great if you're a ball of stress like I am. He's a rigorous teacher, but he's also low-key; I told him up front there will be weeks when I can't practice, and I've never felt guilty at a lesson when this has happened.",
+				"Sheldon never assigns anything that doesn't have a \"higher purpose\". After I mastered some Hanon drills and the basic scales, he started busting out these crazy improvisational exercises he created that use those drills as a starting point. He will never ask you to memorize from a worksheet or a theory book. ",
+				"Overall, Sheldon is an amazing teacher and an interesting person. If you're interested in picking up the piano, or returning to it after a break (like I did), you should check him out!"
 			] 
 		}
 	];
@@ -131,8 +131,13 @@ app.factory( 'reviewFactory', function(){
 		return getCountingArray(maxStars);
 	}
 
+	function getArrayOfReviewIndexNums(){
+		return getCountingArray(reviews.length);
+	}
+
 	return {
 		reviews: reviews,
-		getArrayOfMaxStarsIndexNums: getArrayOfMaxStarsIndexNums
+		getArrayOfMaxStarsIndexNums: getArrayOfMaxStarsIndexNums,
+		getArrayOfReviewIndexNums: getArrayOfReviewIndexNums,
 	}
 });

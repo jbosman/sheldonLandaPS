@@ -5,12 +5,12 @@ review {
 		color: $themeColor;
 	}
 
-	p {
-		text-align: justify;
-	}
-
 	#date {
 		margin-left: 20px;
+	}
+
+	p {
+		text-align: justify;
 	}
 
 	.fa-chevron-left {
@@ -21,4 +21,6 @@ review {
 		margin-right: 5%;
 		float: right;
 	}
+
+
 }

@@ -4,6 +4,7 @@ app.directive('reviews', function(){
 		templateUrl: 'js/reviews/reviews.html',
 		controller: function($scope, reviewFactory){
 			$scope.reviews = reviewFactory.reviews;
+			$scope.getArrayOfReviewIndexNums = reviewFactory.getArrayOfReviewIndexNums;
 		}
 	}
 });
