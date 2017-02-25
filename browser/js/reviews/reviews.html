@@ -17,7 +17,7 @@
             <div class="carousel-item active">
               <p id='welcomeP'>To leave your own review visit Sheldon's <a target='_blank' href='https://www.yelp.com/biz/sheldon-landa-new-york'>Yelp Page</a>.</p>
             </div>
-            <div class="carousel-item" ng-repeat='review in reviews' >
+            <div class="carousel-item" ng-repeat='review in reviews | orderBy : reviewDate' >
               <review review-details='review'></review>
             </div>
           </div>

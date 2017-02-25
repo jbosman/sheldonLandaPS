@@ -5,6 +5,7 @@ app.directive('reviews', function(){
 		controller: function($scope, reviewFactory){
 			$scope.reviews = reviewFactory.reviews;
 			$scope.getArrayOfReviewIndexNums = reviewFactory.getArrayOfReviewIndexNums;
+			$scope.reviewDate = reviewFactory.reviewDate;
 		}
 	}
 });

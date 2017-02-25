@@ -10,4 +10,4 @@
 		<p>{{ paragraph }}</p>
 	</div>
 </div>
-<h2> &ndash; {{ reviewDetails.reviewer }} <span id='date'>{{ reviewDetails.date }}</span></h2>
+<h2> &ndash; {{ reviewDetails.reviewer }} <span id='date'>{{ reviewDetails.date.toDateString().slice(4) }}</span></h2>
