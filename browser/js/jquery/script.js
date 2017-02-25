@@ -1,7 +1,6 @@
 $(window).on('load', function(){
 
 	/* Nav scroll */
-    
 	$(function() {
 		$('a[href*="#"]:not([href="#"])').click(function() {
 			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -17,16 +16,21 @@ $(window).on('load', function(){
 		});
 	});
 
-
-
 	/* Way Points */
-
 	let sections = $('.navAtag');
 	let wayPointsHolder = [];
 
 	sections = Array.prototype.slice.call(sections)
 
 	sections.forEach( (atag) => {
+
+		// Saving for now
+		// Will probably need to implement by own way points library.
+		// This is due to the carousel dynamically changing it's section height
+		// console.log(atag.hash, ": ", $(atag.hash).position());
+		// $(document).on('scroll', function(){
+		// 	console.log($(window).scrollTop())
+		// })
 		
 		let atagName = atag.hash.slice(1);
 		
@@ -49,10 +53,8 @@ $(window).on('load', function(){
 				$('#atag' + atagName + 'Desk').css('color', '#3498db')
 				$('#atag' + atagName + 'Mobile').css('color', '#3498db')
 			}
-			}, offset: -100 
+			}, offset: -100
 		}) );
 	})
-
-	
 
 });

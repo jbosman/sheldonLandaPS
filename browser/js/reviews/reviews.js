@@ -11,7 +11,8 @@ app.directive('reviews', function($timeout){
 
 			// Had to add this timeout due to the ng-repeats not being populated right away
 			// The timeout gives them time to load onto the DOM
-			$timeout(() => { 
+			$timeout(() => {
+
 				elements.find('ol')[0].children[0].classList.add('active');
 
 				Array.prototype.slice.call( elements.find('div')).forEach((divElement) => {
