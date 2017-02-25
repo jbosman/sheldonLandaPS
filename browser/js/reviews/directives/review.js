@@ -5,10 +5,7 @@ app.directive( 'review', function(){
 		controller: function($scope, reviewFactory){
 			$scope.maxStarIndexArr = reviewFactory.getArrayOfMaxStarsIndexNums();
 		},
-		scope: { 
-			reviewDetails: '=',
-		},
-
+		scope: { reviewDetails: '=' }
 	}
 
 });

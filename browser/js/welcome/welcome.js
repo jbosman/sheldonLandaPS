@@ -1,4 +1,4 @@
-app.directive('welcome', function(navbarFactory) { // eslint-disable-line no-unused-vars
+app.directive('welcome', function(navbarFactory) { 
 	return {
 		restrict: 'E',
 		templateUrl: 'js/welcome/welcome.html',

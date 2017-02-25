@@ -8,17 +8,19 @@
         
         <div id="reviewCarousel" class="carousel slide" data-ride="carousel">
 
+          <!-- Note active classes are added in the directive link function -->
           <ol class="carousel-indicators">
-              <li data-target="#reviewCarousel" data-slide-to="0" class="active"></li>
-              <li ng-repeat='reviewNum in getArrayOfReviewIndexNums()' data-target="#reviewCarousel" data-slide-to="{{ reviewNum }}"></li>
+            <li ng-repeat='review in reviews' data-target="#reviewCarousel" data-slide-to="{{ $index }}"></li>
+            <li data-target="#reviewCarousel" data-slide-to='{{ reviews.length }}'></li>
           </ol>
 
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <p id='welcomeP'>To leave your own review visit Sheldon's <a target='_blank' href='https://www.yelp.com/biz/sheldon-landa-new-york'>Yelp Page</a>.</p>
-            </div>
+          <!-- Note active classes are added in the directive link function -->
+          <div id='carousel-reviews' class="carousel-inner" role="listbox">
             <div class="carousel-item" ng-repeat='review in reviews | orderBy : reviewDate' >
               <review review-details='review'></review>
+            </div>
+            <div class="carousel-item">
+              <p id='welcomeP'>To leave your own review visit Sheldon's <a target='_blank' href='https://www.yelp.com/biz/sheldon-landa-new-york'>Yelp Page</a>.</p>
             </div>
           </div>
 
