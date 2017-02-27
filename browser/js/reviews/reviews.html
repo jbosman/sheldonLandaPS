@@ -10,18 +10,18 @@
 
           <!-- Note active classes are added in the directive link function -->
           <ol class="carousel-indicators">
-            <li ng-repeat='review in reviews' data-target="#reviewCarousel" data-slide-to="{{ $index }}"></li>
-            <li data-target="#reviewCarousel" data-slide-to='{{ reviews.length }}'></li>
+            <li ng-repeat='reviewGroup in reviewGroups' data-target="#reviewCarousel" data-slide-to="{{ $index }}"></li>
+            <!-- <li data-target="#reviewCarousel" data-slide-to='{{ reviewGroups.length }}'></li> -->
           </ol>
 
           <!-- Note active classes are added in the directive link function -->
           <div id='carousel-reviews' class="carousel-inner" role="listbox">
-            <div class="carousel-item" ng-repeat='review in reviews | orderBy : reviewDate' >
-              <review review-details='review'></review>
+            <div class="carousel-item" ng-repeat='reviewGroup in reviewGroups' >
+              <review review-group='reviewGroup'></review>
             </div>
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
               <p id='welcomeP'>To leave your own review visit Sheldon's <a target='_blank' href='https://www.yelp.com/biz/sheldon-landa-new-york'>Yelp Page</a>.</p>
-            </div>
+            </div> -->
           </div>
 
           <a class="carousel-control-prev" href="#reviewCarousel" role="button" data-slide="prev">

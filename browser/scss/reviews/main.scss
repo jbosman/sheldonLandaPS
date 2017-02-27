@@ -1,12 +1,15 @@
 
 #reviews {
+
+	//min-height: 1000px;
+
 	background-color: $altSectBackground;
 
 	.fa-chevron-left,
 	.fa-chevron-right { color: $themeColor; }
 
 	#welcomeP {
-		margin: auto;
+		margin: auto auto;
 		text-align: center;
 	}
 

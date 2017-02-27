@@ -1,19 +1,21 @@
-<div id='stars'>
-	<span  ng-repeat='starIndex in maxStarIndexArr'>
-		<i ng-if='reviewDetails.stars >= starIndex' class="fa fa-star" aria-hidden="true"></i>
-		<i ng-if='reviewDetails.stars < starIndex' class="fa fa-star-o" aria-hidden="true"></i>
-	</span>
-</div>
-
-<div>
-	<div ng-repeat='paragraph in reviewDetails.paragraphs'>
-		<p>{{ paragraph }}</p>
+<div ng-repeat='review in reviewGroup'>
+	<div id='stars'>
+		<span  ng-repeat='starIndex in maxStarIndexArr'>
+			<i ng-if='review.stars >= starIndex' class="fa fa-star" aria-hidden="true"></i>
+			<i ng-if='review.stars < starIndex' class="fa fa-star-o" aria-hidden="true"></i>
+		</span>
 	</div>
-</div>
 
-<h2> 
-	&ndash;
-	{{ reviewDetails.reviewer }} 
-	<span id='date'>{{ reviewDetails.date.toDateString().slice(4) }}</span>
-</h2>
+	<div>
+		<div ng-repeat='paragraph in review.paragraphs'>
+			<p>{{ paragraph }}</p>
+		</div>
+	</div>
+
+	<h2> 
+		&ndash;
+		{{ review.reviewer }} 
+		<span id='date'>{{ review.date.toDateString().slice(4) }}</span>
+	</h2>
+</div>
 

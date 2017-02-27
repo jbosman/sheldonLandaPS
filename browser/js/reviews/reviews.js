@@ -3,9 +3,8 @@ app.directive('reviews', function($timeout){
 		restrict: 'E',
 		templateUrl: 'js/reviews/reviews.html',
 		controller: function($scope, reviewFactory){
-			$scope.reviews = reviewFactory.reviews;
-			$scope.getArrayOfReviewIndexNums = reviewFactory.getArrayOfReviewIndexNums;
-			$scope.reviewDate = reviewFactory.reviewDate;
+			$scope.reviewGroups = reviewFactory.reviewGroups;
+			$scope.getArrayOfReviewGroupIndexNums = reviewFactory.getArrayOfReviewGroupIndexNums;
 		},
 		link: function(scope, elements){ // eslint-disable-line no-unused-vars
 
@@ -19,6 +18,13 @@ app.directive('reviews', function($timeout){
 					if( divElement.id === 'carousel-reviews' )
 						divElement.children[0].classList.add('active');
 				})
+
+				// Quick fix for now to avoid needing to reset the waypoints dynamically
+				// Keeps the height of the section static so it's not dynamically changing with
+				// the different review heights
+				// Couldn't get carousel slide event handler to fire
+				let reviewsSection = $('#reviews');
+				reviewsSection.css('min-height', reviewsSection.height());
 
 			}, 50);
 
