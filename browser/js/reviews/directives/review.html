@@ -1,4 +1,4 @@
-<div ng-repeat='review in reviewGroup'>
+<div id=individualReview ng-repeat='review in reviewGroup'>
 	<div id='stars'>
 		<span  ng-repeat='starIndex in maxStarIndexArr'>
 			<i ng-if='review.stars >= starIndex' class="fa fa-star" aria-hidden="true"></i>

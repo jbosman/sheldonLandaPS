@@ -36,9 +36,7 @@ app.factory( 'reviewFactory', function(){
 				paragraphs: [
 					'Although I have not used Sheldon as a piano teacher I did hire him to conduct some meditation exercises for staff at my non-profit office. He did an excellent job. He was prepared, thoughtful, and engaging. The staff loved it. Sheldon is professional and trustworthy in my experience.'
 				] 
-			}
-		],
-		[
+			},
 			{ 
 				reviewer: 'Anderson E.',
 				stars: 5,
