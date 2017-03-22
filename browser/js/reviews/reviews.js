@@ -12,11 +12,11 @@ app.directive('reviews', function($timeout){
 			// The timeout gives them time to load onto the DOM
 			$timeout(() => {
 
-				elements.find('ol')[0].children[1].classList.add('active');
+				elements.find('ol')[0].children[0].classList.add('active');
 
 				Array.prototype.slice.call( elements.find('div')).forEach((divElement) => {
 					if( divElement.id === 'carousel-reviews' ){
-						divElement.children[1].classList.add('active');
+						divElement.children[0].classList.add('active');
 					}
 				})
 
