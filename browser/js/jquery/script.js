@@ -39,8 +39,8 @@ $(window).on('load', function(){
 			handler: function(direction) { 
 			if( direction === 'down'){
 				$('.navAtag').css('color', '#000')
-				$('#atag' + atagName + 'Desk').css('color', '#3498db')
-				$('#atag' + atagName + 'Mobile').css('color', '#3498db')
+				$('#atag' + atagName + 'Desk').css('color', '#5063e5')
+				$('#atag' + atagName + 'Mobile').css('color', '#5063e5')
 			}
 			}, offset: 100 
 		}));
@@ -50,8 +50,8 @@ $(window).on('load', function(){
 			handler: function(direction) { 
 			if( direction === 'up'){
 				$('.navAtag').css('color', '#000')
-				$('#atag' + atagName + 'Desk').css('color', '#3498db')
-				$('#atag' + atagName + 'Mobile').css('color', '#3498db')
+				$('#atag' + atagName + 'Desk').css('color', '#5063e5')
+				$('#atag' + atagName + 'Mobile').css('color', '#5063e5')
 			}
 			}, offset: -100
 		}) );
