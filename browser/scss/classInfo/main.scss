@@ -3,4 +3,28 @@
 
 	p { text-align: justify; }
 	h1, h2 { text-align: center; }
+
+	.class-info-column { 
+		position: relative; 
+
+		.lessons-award {
+			position: absolute;
+			top: -10px;
+			left: 10%;
+
+			img { width: 130px; }
+
+			@media only screen and (max-width: 767px){
+				img { width: 80px; }
+			}
+
+			@media only screen and (max-width: 480px){
+				img { width: 60px; }
+			}
+
+		}
+	}
+
+	
+
 }
